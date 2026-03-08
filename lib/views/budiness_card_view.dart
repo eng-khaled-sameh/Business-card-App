@@ -14,7 +14,7 @@ class BudinessCardView extends StatelessWidget {
       backgroundColor: Color.fromRGBO(93, 90, 83, 1),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
-        child: Column(
+        child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleImage(),
@@ -22,7 +22,7 @@ class BudinessCardView extends StatelessWidget {
             NameWidget(),
             ProfessionWidget(),
             Divider(
-              color: const Color.fromARGB(255, 205, 202, 194),
+              color: Color.fromARGB(255, 205, 202, 194),
               thickness: 2,
               indent: 60,
               endIndent: 60,
