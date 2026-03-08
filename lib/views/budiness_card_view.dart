@@ -1,3 +1,8 @@
+import 'package:business_card/widgets/circule_image.dart';
+import 'package:business_card/widgets/email_widget.dart';
+import 'package:business_card/widgets/name_widget.dart';
+import 'package:business_card/widgets/phone_number.dart';
+import 'package:business_card/widgets/profession_widget.dart';
 import 'package:flutter/material.dart';
 
 class BudinessCardView extends StatelessWidget {
@@ -10,25 +15,22 @@ class BudinessCardView extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
-              backgroundColor: Colors.white,
-              radius: 112,
-              child: CircleAvatar(
-                backgroundImage: AssetImage('images/khaled.jpeg'),
-                radius: 110,
-              ),
-            ),
+            CircleImage(),
             SizedBox(height: 12),
-            Text(
-              'Khaled Sameh',
-              style: TextStyle(
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-                color: Colors.white,
-                fontFamily: 'Pacifico',
-              ),
+            NameWidget(),
+            ProfessionWidget(),
+            Divider(
+              color: const Color.fromARGB(255, 205, 202, 194),
+              thickness: 2,
+              indent: 60,
+              endIndent: 60,
             ),
+            SizedBox(height: 8),
+            PhoneNumber(),
+            SizedBox(height: 12),
+            EmailWidget(),
           ],
         ),
       ),
