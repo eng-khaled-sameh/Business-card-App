@@ -1,3 +1,4 @@
+import 'package:business_card/views/budiness_card_view.dart';
 import 'package:flutter/material.dart';
 
 class BusinessCardApp extends StatelessWidget {
@@ -5,6 +6,9 @@ class BusinessCardApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: BudinessCardView(),
+    );
   }
 }
