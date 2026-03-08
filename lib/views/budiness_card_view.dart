@@ -19,6 +19,16 @@ class BudinessCardView extends StatelessWidget {
                 radius: 110,
               ),
             ),
+            SizedBox(height: 12),
+            Text(
+              'Khaled Sameh',
+              style: TextStyle(
+                fontSize: 32,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+                fontFamily: 'Pacifico',
+              ),
+            ),
           ],
         ),
       ),
